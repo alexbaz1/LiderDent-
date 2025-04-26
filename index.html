@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiderDent+ — Стоматология премиум-класса</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="LiderDent+" width="60">
+                <span>LiderDent+</span>
+            </div>
+            <nav>
+                <a href="#services">Услуги</a>
+                <a href="#doctors">Врачи</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <button class="btn-telegram" onclick="openTelegram()">Записаться онлайн</button>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="container">
+            <h1>Ваша улыбка — наша профессия</h1>
+            <p>Используем инновационные технологии для вашего комфорта</p>
+        </div>
+    </section>
+
+    <!-- Услуги (данные грузятся из JSON) -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid" id="services-container"></div>
+        </div>
+    </section>
+
+    <!-- Врачи (данные из JSON) -->
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <h2>Наши врачи</h2>
+            <div class="doctors-grid" id="doctors-container"></div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Отзывы пациентов</h2>
+            <div class="reviews-slider" id="reviews-container"></div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-info">
+                <p>📍Полковая ул., 1/25, ТРК "Константиновский", Санкт-Петербург</p>
+                <p>📞 8 (812) 949-01-17</p>
+                <p>✉️ info@liderdent.ru</p>
+            </div>
+            <button class="btn-primary" onclick="openTelegram()">Написать в Telegram</button>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>© 2024 LiderDent+. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
